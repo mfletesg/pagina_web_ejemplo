@@ -6,28 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Fletes</title>
     <script src="./usuario.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./roles/style.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <button onclick="btnpush()">Hola</button>
-    <p>Hola Mundo</p>
-    <img src="https://m.media-amazon.com/images/I/61AATD+6IiL._AC_UL320_.jpg" alt="" srcset="">
-    <table>
-        <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-          </tr>
-          <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-          </tr>
-    </table>
+
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-2 col-12">
+          <button onclick="btnpush()" id="IDbtnHola" class="btnHola">Hola</button> 
+        </div>
+        <div class="col-sm-2 col-12">
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+        <div class="col-sm-8 col-12">
+          <p class="btnHola">Hola Mundo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <img src="https://m.media-amazon.com/images/I/61AATD+6IiL._AC_UL320_.jpg" alt="" srcset="" class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Country</th>
+                      </tr>
+                      <tr>
+                        <td scope="col">Alfreds Futterkiste</td>
+                        <td scope="col">Maria Anders</td>
+                        <td scope="col">Germany</td>
+                      </tr>
+                      <tr>
+                        <td scope="col">Centro comercial Moctezuma</td>
+                        <td scope="col">Francisco Chang</td>
+                        <td scope="col">Mexico</td>
+                      </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+    
+
     
 </body>
 </html>
