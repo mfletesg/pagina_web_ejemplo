@@ -1,6 +1,7 @@
 window.addEventListener("load", function(event) {
     let fruta = '🍎';
-    btnpush(fruta)
+    btnpush(fruta);
+    getRockBands();
 });
 
 
@@ -42,5 +43,39 @@ function btnpush(fruta){
 
 
     //console.log(array)
+}
+
+
+async function getRockBands(){
+    const settings = {
+        method: 'GET',
+        headers: {
+            Accept: 'application/json',
+        }
+    };
+    const response = await fetch('https://miguelfletes.com/api/api-bandas', settings);
+    const data = await response.json();
+    console.log(data);
+
+    console.log(data.length)
+
+    let html = '';
+    for (let i = 0; i < data.length; i++) {
+        // if(i === 1){
+        //     console.log(data[i]);
+        //     break;
+        // }
+        //const banda = array[i];  
+        html += '<tr>\
+                    <td scope="col">'+(i + 1)+'</td>\
+                    <td scope="col">'+data[i].banda+'</td>\
+                    <td scope="col">'+data[i].logo+'</td>\
+                </tr>';
+           
+    }
+
+    document.getElementById('contentTable').innerHTML = html;
+
+    console.log(html)
 
 }
